@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <link rel="stylesheet" href="style/index.css">
+    
     <script src="index.js" type="module"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="js/child.js"></script>
@@ -13,8 +14,11 @@
 </head>
 <body>
 
+  
+
     <nav class="navbar navbar-light alert-info">
-        <a class="navbar-brand">ICP RSDR SYSTEM</a>
+     <div> <img src="/img/favicon.ico" style="width: 70px; border-radius: 100%;" alt="">
+      <a class="navbar-brand">ICP RSDR SYSTEM</a></div>
         <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-primary my-2 my-sm-0" type="submit" >Search</button>
@@ -23,16 +27,16 @@
     <div class="main mt-3">
         <table class="table table-bordered table-primary" style="text-align: center;">
           <thead>
+            <th>tracknumber</th>
              <th>FirstName</th>
             <th>LastName</th>
             <th>MiddleName</th>
-            <th>PlaceOfBirth</th>
-            <th>DateOfBirth</th>
-            <th>ContactNo</th>
-            <th>StudentNumber</th>
-            <th>Delete</th>
-            <th>View More</th>
-            <!-- <th>GradeSection</th>
+             <th>ContactNo</th>
+            <th>info</th>
+            <th>Request</th>
+            <th>Date request</th>
+            <th>Date Finished</th>
+            <!--<th>GradeSection</th>
             <th>Adress</th>
             <th>LRN</th>
             <th>Certification</th>

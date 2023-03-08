@@ -26,10 +26,10 @@ const firebaseConfig = {
             let td1 = document.createElement('td')
             let td2 = document.createElement('td');
             let td3 = document.createElement('td');
-            let td4 = document.createElement('td');
-            let td5 = document.createElement('td');
+           let  tracknumber = document.createElement('td')
+           let DateRequest = document.createElement('td')
             let td6 = document.createElement('td');
-            let td7 = document.createElement('td');
+           let DateFinished = document.createElement('td')
             let td8 = document.createElement('td');
             let td9 = document.createElement('td');
             // let td13 = document.createElement('td');
@@ -46,16 +46,15 @@ const firebaseConfig = {
 
 
   
-           
+           tracknumber.innerHTML='33312121234532';
             td1.innerHTML= LastName;
             td2.innerHTML=FirstName 
             td3.innerHTML= MiddleName;
-            td4.innerHTML=PlaceOfBirth;
-            td5.innerHTML=DateOfBirth;
             td6.innerHTML=ContactNo;
-            td7.innerHTML=StudentNumber;
-            td8.innerHTML='<button class="btn btn-danger my-2 my-sm-0" id="delete" type="submit" >Delete</button>';
+            td8.innerHTML='<a href="/AdminViewifo.html"><button class="btn btn-info my-2 my-sm-0" id="delete" type="submit" >info</button></a>';
             td9.innerHTML='<button class="btn btn-success my-2 my-sm-0" type="submit" >View Request</button>';
+            DateRequest.innerHTML = '24 Jan 00:04'
+            DateFinished.innerHTML = '26 Jan 11:39'
             // td10.innerHTML= LRN;
             // td11.innerHTML= Certification;
             // td12.innerHTML=Registration;
@@ -70,22 +69,19 @@ const firebaseConfig = {
             // td21.innerHTML=G12Sem2;
             // td22.innerHTML=Regular;          
             // td23.innerHTML=Transferee;
-            
-
-
-            
+            tr.appendChild(tracknumber)
             
             tr.appendChild(td1);
             tr.appendChild(td1);
             tr.appendChild(td2);
             tr.appendChild(td2);
             tr.appendChild(td3);
-            tr.appendChild(td4);
-            tr.appendChild(td5);
             tr.appendChild(td6);
-            tr.appendChild(td7);
+         
             tr.appendChild(td8);
             tr.appendChild(td9);
+            tr.appendChild(DateRequest)
+            tr.appendChild(DateFinished)
             // tr.appendChild(td10);
             // tr.appendChild(td11);
             // tr.appendChild(td12);
